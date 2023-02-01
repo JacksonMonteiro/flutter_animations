@@ -1,4 +1,5 @@
 import 'package:animations/app/views/home_view.dart';
+import 'package:animations/app/views/sandbox.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -9,10 +10,11 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(        
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: HomeView(),
+      home: Sandbox(),
     );
   }
 }
